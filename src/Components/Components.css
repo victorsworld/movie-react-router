@@ -1,0 +1,18 @@
+.NavBar{
+    display: flex;
+    justify-content: space-around;
+    background: yellow;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    margin-top: 2vh;
+}
+.NavBar-Links{
+    padding: 5px;
+    border: black 1px solid;
+    border-radius: 5%;
+    margin: 10px;
+    font-size: medium;
+    text-decoration: black;
+    background-color: aquamarine
+}
+
