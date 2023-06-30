@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         element: <CreateMovie />,
       },
       {
-        path: '/moive/:id/edit'
+        path: '/moive/:id/edit',
         element: <EditMovie/>
       }
     ],
