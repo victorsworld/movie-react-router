@@ -16,8 +16,8 @@ const EditMovie = () => {
   const { movieData, setMovieData } = useOutletContext();
 
   const handleOnSubmit = () => {
+
     setMovieData((prevMovies) => {
-      // Find the index of the movie with the matching ID
       const movieIndex = prevMovies.findIndex((movie) => movie.id.toString() === id);
 
       if (movieIndex !== -1) {
@@ -42,9 +42,17 @@ const EditMovie = () => {
 
       return prevMovies;
     });
-
-    navigate('/');
-  };
+  }
+  
+    const handleOnDelete = () => {
+      // Using a filter array method to filter the blogs in the array by ID
+      const remainingMovies = movieData.filter((movie) => {
+        return movie.id.toString() !== id ;
+      });
+      // SetBlogs to the filtered blog
+      setMovieData(remainingMovies);
+      navigate('/');
+    };
 
 
   return (
@@ -75,6 +83,7 @@ const EditMovie = () => {
       <textarea id="editPlot" value={editPlot} onChange={(e) => setEditPlot(e.target.value)} />
       <br />
       <button onClick={handleOnSubmit}>Submit</button>
+      <button onClick={handleOnDelete}>Delete</button>
     </div>
   );
 };
