@@ -5,6 +5,7 @@ import App from './App';
 import MoviesList from './Components/MoviesList';
 import CreateMovie from './Components/CreateMovie';
 import Home from './Components/Home';
+import EditMovie from './Components/EditMovie';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         path: '/movies-form',
         element: <CreateMovie />,
       },
+      {
+        path: '/moive/:id/edit'
+        element: <EditMovie/>
+      }
     ],
   },
 ]);
