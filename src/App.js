@@ -9,6 +9,7 @@ import './App.css';
 function App() {
   const [movieData, setMovieData] = useState(data);
 
+ 
   return (
     <div>
       <div class="App-Header">

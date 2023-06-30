@@ -1,11 +1,15 @@
 import React from 'react'
+import MovieCard from './MovieCard';
+import { useOutletContext } from 'react-router-dom';
 
-const MoviesList = ( movie) => {
-
-  return (
+const MoviesList = () => {
+    const { movieData, setMovieData} = useOutletContext()
+  
+    return (
     <div> 
-        MoviesList
-        <h1>{movie.title}</h1>
+        {movieData.map((movie)=>{
+            return <MovieCard movie={movie}/>})}
+           
     </div>
   )
 }
