@@ -1,0 +1,11 @@
+.Create {
+    border: black solid 2px;
+    margin-right: 20vw;
+  margin-left: 20vw;
+  margin-top: 2vh;
+}
+.create-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

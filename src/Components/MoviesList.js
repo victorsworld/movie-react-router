@@ -1,5 +1,6 @@
 import React from 'react'
 import MovieCard from './MovieCard';
+import "./Components.css"
 import { useOutletContext } from 'react-router-dom';
 
 const MoviesList = () => {

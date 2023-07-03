@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Components.css"
 import { useNavigate, useParams } from 'react-router-dom'
 
 const MovieCard = ({ movie }) => {

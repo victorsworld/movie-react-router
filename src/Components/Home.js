@@ -1,15 +1,16 @@
 import React from 'react';
 import { useOutletContext } from 'react-router-dom';
-import MoviesList from './MoviesList';
+import "./Components.css"
+
 
 const Home = () => {
   const { movieData, setMovieData } = useOutletContext();
   console.log(movieData);
 
   return (
-    <div>
+    <div class="Homepage" >
       <h1>Home</h1>
-      <div class="SideBar">
+      <div >
         {movieData.map((movie) => {
           return movie.image;
         })}
