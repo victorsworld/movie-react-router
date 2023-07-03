@@ -8,16 +8,14 @@ const Home = () => {
 
   return (
     <div class="Homepage">
+    <h1>Home</h1>
       <div class="Homepagediv2" >
-        <h1>Home</h1>
-        <div>
           {movieData.map((movie) => {
-            return movie.image;
+            return <div class="movie-image">
+              <img src={movie.image}
+              alt='not entered yet'/> 
+              </div>;
           })}
-          {/* {movieData.map((movie) => {
-            return <MoviesList movieData={movieData} setMovieData={setMovieData} key={movie.id} movie={movie}/>
-        })} */}
-        </div>
       </div>
     </div>
   );

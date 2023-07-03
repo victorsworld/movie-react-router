@@ -41,3 +41,11 @@
 .Homepage{
   border: solid black 1px;
 }
+.Homepagediv2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  border: solid black 1px;
+}
