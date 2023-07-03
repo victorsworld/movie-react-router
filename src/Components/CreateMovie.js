@@ -45,87 +45,98 @@ const CreateMovie = () => {
 
   return (
     <div class="Create">
-      <div class="create-box">
-        <label htmlFor="title">Title:</label><input
-          id="title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <br />
+      <div class="parent">
+        <div class="create-box">
+          <label htmlFor="title">Title:</label>{' '}
+          <input
+            class="input"
+            id="title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+          <br />
+        </div>
+
+        <div class="create-box">
+          <label htmlFor="year">Year:</label>
+          <input
+            class="input"
+            id="year"
+            value={year}
+            onChange={(e) => setYear(e.target.value)}
+          />
+          <br />
+        </div>
+
+        <div class="create-box">
+          <label htmlFor="director">Director:</label>
+          <input
+            class="input"
+            id="director"
+            value={director}
+            onChange={(e) => setDirector(e.target.value)}
+          />
+          <br />
+        </div>
+
+        <div class="create-box">
+          <label htmlFor="genre">Genre:</label>
+          <input
+            class="input"
+            id="genre"
+            value={genre}
+            onChange={(e) => setGenre(e.target.value)}
+          />
+          <br />
+        </div>
+
+        <div class="create-box">
+          <label htmlFor="rating">Rating:</label>
+          <input
+            class="input"
+            id="rating"
+            value={rating}
+            onChange={(e) => setRating(e.target.value)}
+          />
+          <br />
+        </div>
+
+        <div class="create-box">
+          <label htmlFor="runtime">Runtime:</label>
+          <input
+            class="input"
+            id="runtime"
+            value={runtime}
+            onChange={(e) => setRuntime(e.target.value)}
+          />
+          <br />
+        </div>
+
+        <div class="create-box">
+          <label htmlFor="actors">Actors:</label>
+          <input
+            class="input"
+            id="actors"
+            value={actors}
+            onChange={(e) => setActors(e.target.value.split(','))}
+          />
+          <br />
+        </div>
+
+        <div class="create-box">
+          <label htmlFor="plot">Plot:</label>
+          <input
+            class="input"
+            id="plot"
+            value={plot}
+            onChange={(e) => setPlot(e.target.value)}
+          />
+          <br />
+        </div>
+        <div class="button">
+          <button onClick={handleOnSubmit}>Submit</button>
+        </div>
       </div>
-
-      <div class="create-box">
-        <label htmlFor="year">Year:</label>
-        <input
-          id="year"
-          value={year}
-          onChange={(e) => setYear(e.target.value)}
-        />
-        <br />
-      </div>
-
-      <div class="create-box">
-        <label htmlFor="director">Director:</label>
-        <input
-          id="director"
-          value={director}
-          onChange={(e) => setDirector(e.target.value)}
-        />
-        <br />
-      </div>
-
-      <div class="create-box">
-        <label htmlFor="genre">Genre:</label>
-        <input
-          id="genre"
-          value={genre}
-          onChange={(e) => setGenre(e.target.value)}
-        />
-        <br />
-      </div>
-
-      <div class="create-box">
-        <label htmlFor="rating">Rating:</label>
-        <input
-          id="rating"
-          value={rating}
-          onChange={(e) => setRating(e.target.value)}
-        />
-        <br />
-      </div>
-
-      <div class="create-box">
-        <label htmlFor="runtime">Runtime:</label>
-        <input
-          id="runtime"
-          value={runtime}
-          onChange={(e) => setRuntime(e.target.value)}
-        />
-        <br />
-      </div>
-
-      <div class="create-box">
-        <label htmlFor="actors">Actors:</label>
-        <input
-          id="actors"
-          value={actors}
-          onChange={(e) => setActors(e.target.value.split(','))}
-        />
-        <br />
-      </div>
-
-      <div class="create-box">
-        <label htmlFor="plot">Plot:</label>
-        <input
-          id="plot"
-          value={plot}
-          onChange={(e) => setPlot(e.target.value)}
-        />
-        <br />
-
-        <button onClick={handleOnSubmit}>Submit</button>
-      </div>
-
     </div>
   );
 };

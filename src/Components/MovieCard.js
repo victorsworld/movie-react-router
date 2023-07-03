@@ -7,9 +7,11 @@ const MovieCard = ({ movie }) => {
   const { id } = useParams();
   return (
     <div class="MovieCard">
-        <h3>{movie.title}</h3>
-        <h3>{movie.year}</h3>
-        <button onClick={() => navigate(`/moive/${movie.id}/edit`)}>Edit</button>
+      
+        <h3 class="movieh3">{movie.title}</h3>
+        <h3 class="movieh3">{ movie.year}</h3>
+        <button class="movielist-button" onClick={() => navigate(`/moive/${movie.id}/edit`)}>Edit</button>
+
     </div>
   )
 }

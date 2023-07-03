@@ -1,7 +1,9 @@
 .NavBar {
   display: flex;
   justify-content: space-around;
-  background: yellow;
+  background: #FFFC99;
+  border: black solid 1px;
+  border-radius: 5px;
   margin-right: 20vw;
   margin-left: 20vw;
   margin-top: 2vh;
@@ -10,15 +12,32 @@
 .NavBar-Links {
   padding: 5px;
   border: black 1px solid;
-  border-radius: 5%;
+  border-radius: 5px;
   margin: 10px;
   font-size: medium;
   text-decoration: black;
-  background-color: aquamarine;
+  background-color: #B1F8F2
 }
 
+.Movielist-container{
+  border: solid black 1px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 2vh;
+  border-radius: 5px;
+}
 .MovieCard {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.movieh3 {
+  margin: 5px;
+}
+.movielist-button{
+  margin: 5px;
+}
+.Homepage{
+  border: solid black 1px;
 }

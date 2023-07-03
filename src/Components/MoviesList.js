@@ -7,7 +7,7 @@ const MoviesList = () => {
     const { movieData, setMovieData} = useOutletContext()
   
     return (
-    <div> 
+    <div className='Movielist-container'> 
         {movieData.map((movie)=>{
             return <MovieCard movie={movie}/>})}
            
