@@ -48,11 +48,11 @@ const EditMovie = () => {
   };
 
   const handleOnDelete = () => {
-    // Using a filter array method to filter the blogs in the array by ID
+    // Using a filter array method to filter the movie in the array by ID
     const remainingMovies = movieData.filter((movie) => {
       return movie.id.toString() !== id;
     });
-    // SetBlogs to the filtered blog
+    // SetBlogs to the filtered movie
     setMovieData(remainingMovies);
     navigate('/movies-list');
   };
